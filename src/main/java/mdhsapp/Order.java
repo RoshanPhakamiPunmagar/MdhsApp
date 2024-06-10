@@ -1,7 +1,10 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+Author: Roshan Phakami Punmagar
+StudentId: 12201590
+FileName: Order.java
+Date: 07/06/2024
+Purpose: This class represents an order in a delivery system with details about order ID, customer ID, product list, order date, delivery date, total price, and order status.
+*/
 package mdhsapp;
 
 /**
@@ -10,27 +13,29 @@ package mdhsapp;
  */
 import java.io.Serializable;
 import java.util.Date;
-import java.util.List;
+
+
+// Order class represents an order in a delivery system.
+//It encapsulates details about the order including order ID, customer ID, product list,order date, delivery date, total price, and order status.
+ 
 
 public class Order implements Serializable {
     // Attributes
     private int orderId;
     private int customerId;
-    private List<Product> productList;
+    private String productList;
     private Date orderDate;
     private Date deliveryDate;
     private double totalPrice;
     private String status; // e.g., "Pending", "Completed", "Cancelled"
 
-    // Constructor
-    public Order(int orderId, int customerId, List<Product> productList, Date orderDate, Date deliveryDate, double totalPrice, String status) {
+    // Parameterized Constructor
+    public Order(int orderId, int customerId, String productList, Date orderDate, Date deliveryDate, double totalPrice, String status) {
         this.orderId = orderId;
         this.customerId = customerId;
         this.productList = productList;
         this.orderDate = orderDate;
         this.deliveryDate = deliveryDate;
-        this.totalPrice = totalPrice;
-        this.status = status;
     }
 
     // Default Constructor
@@ -54,11 +59,11 @@ public class Order implements Serializable {
         this.customerId = customerId;
     }
 
-    public List<Product> getProductList() {
+    public String getProductList() {
         return productList;
     }
 
-    public void setProductList(List<Product> productList) {
+    public void setProductList(String productList) {
         this.productList = productList;
     }
 

@@ -34,8 +34,10 @@
     <!-- Order Section -->
     <VBox spacing="5" GridPane.columnIndex="2" GridPane.rowIndex="0">
         <Label text="Place Order" />
-        <TextField fx:id="orderCustomerId" promptText="Customer ID" />
-        <TextField fx:id="orderTotalPrice" promptText="Total Price" />
+      <TextField fx:id="orderCustomerId" promptText="CustomerId" />
+        <TextField fx:id="orderTotalPrice" promptText="Charge" />
+      <TextField fx:id="pName" promptText="Product Name" />
+      <TextField fx:id="status" promptText="Status" />
         <Button onAction="#handlePlaceOrder" text="Place Order" />
     </VBox>
     
